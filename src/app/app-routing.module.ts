@@ -19,6 +19,14 @@ const routes: Routes = [
     path: 'alert',
     loadChildren: () => import('./pages/alert/alert.module').then( m => m.AlertPageModule)
   },
+  {
+    path: 'menu',
+    loadChildren: () => import('./pages/menu/menu.module').then( m => m.MenuPageModule)
+  },
+  {
+    path: 'ion-card',
+    loadChildren: () => import('./pages/ion-card/ion-card.module').then( m => m.IonCardPageModule)
+  },
 ];
 
 @NgModule({
