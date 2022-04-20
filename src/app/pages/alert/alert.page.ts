@@ -15,10 +15,10 @@ export class AlertPage implements OnInit {
   async presentAlertMultipleButtons() {
     const alert = await this.alertController.create({
       cssClass: 'my-custom-class',
-      header: 'Alert',
-      subHeader: 'Subtitle',
-      message: 'This is an alert message.',
-      buttons: ['Cancel', 'Open Modal', 'Delete']
+      header: 'Alerta!!!!!',
+      subHeader: 'Lea atentamente ',
+      message: 'Esto es un mensaje de alerta.',
+      buttons: ['Cancelar', 'Abrir Modal', 'Eliminar']
     });
 
     await alert.present();

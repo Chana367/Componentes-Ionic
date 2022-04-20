@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="Volver" defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Search Bar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<!-- Animated Searchbar -->
+<ion-searchbar [(ngModel)]="palabraBuscar" (ionChange)="buscar()" (ionFocus)="hayfocus()" (ionBlur)="hayblur()" animated></ion-searchbar>
+<ion-item *ngFor="let fruta of frutasMostrar">
+  <ion-label>{{fruta}}</ion-label>
+</ion-item>
+
+
+</ion-content>
